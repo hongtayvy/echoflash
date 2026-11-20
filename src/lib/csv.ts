@@ -148,6 +148,6 @@ export function toechoflashsCsv(rows: { question: string; answer: string; tags?:
       answer: r.answer,
       tags: (r.tags ?? []).join(" "),
     })),
-    { quotes: true }
+    { quotes: true, escapeFormulae: true }
   );
 }
